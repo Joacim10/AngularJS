@@ -21,11 +21,8 @@ app.config(function($routeProvider) {
     })
 })
 
-
-
-
 app.controller("defaultController", function($scope) {
-            $scope.image = "BUTTON.png"; $scope.title = "DON'T MISS OUT ON THE INFO YOU WANT"; $scope.text = "Let Habanero make your life easier FREE of charge";
+    $scope.image = "BUTTON.png"; $scope.title = "DON'T MISS OUT ON THE INFO YOU WANT"; $scope.text = "Let Habanero make your life easier FREE of charge";
     
 })
 
@@ -35,7 +32,7 @@ app.controller("theProblemController", function($scope) {
 })
 
 app.controller("theSolutionController", function($scope) {
-            $scope.image = "Habanero white.png"; $scope.title = "THE SOLUTION"; $scope.text_a = "GET USEFUL INFO"; $scope.text_b = "- WHEN YOU NEED IT"; $scope.text2 = "Habanero will remind you of relevant info i.e. discounts, product warnings and content you actually want. It will keep itself up to date on lots of information and remind you what you need to know when it’s relevant for you."; $scope.text3 = "All you need to do is tell your Habanero who you trust and it will make your life easier."; $scope.text4 = "Habanero is 100% confidential because it’s all in your web browser. With Habanero you don’t share data - you get data.";
+    $scope.image = "Habanero white.png"; $scope.title = "THE SOLUTION"; $scope.text_a = "GET USEFUL INFO"; $scope.text_b = "- WHEN YOU NEED IT"; $scope.text2 = "Habanero will remind you of relevant info i.e. discounts, product warnings and content you actually want. It will keep itself up to date on lots of information and remind you what you need to know when it’s relevant for you."; $scope.text3 = "All you need to do is tell your Habanero who you trust and it will make your life easier."; $scope.text4 = "Habanero is 100% confidential because it’s all in your web browser. With Habanero you don’t share data - you get data.";
 })
 
 app.controller("companiesController", function($scope) {
@@ -53,8 +50,6 @@ app.controller("companiesController", function($scope) {
     ]
 })
 
-
-
 .controller('ExampleController', ['$scope', function($scope) {
     $scope.master = {};
 
@@ -67,9 +62,8 @@ app.controller("companiesController", function($scope) {
     };
 
     $scope.reset();
-  }]);
+}]);
 
-  
 
 // DIRECTIVES = Partial Views
 app.directive("appheader", function() {
@@ -77,6 +71,7 @@ app.directive("appheader", function() {
         template: ''
     }
 })
+
 app.directive("appfooter", function() {
     return {
         template: ''

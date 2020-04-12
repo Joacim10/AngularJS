@@ -20,7 +20,6 @@
 
     <appheader></appheader>
 
-
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-5">
             <div class="d-flex container"><a id="logo" class="navbar-brand" href="#"><img id="logo-image"
@@ -42,63 +41,35 @@
         </nav>
     </header>
 
-
-
     <div ng-view></div>
-
-
-
 
     <appfooter></appfooter>
 
-
     <footer class="bg-green">
             <div class="footer container" ng-controller="ExampleController">
-
         <div class="d-flex justify-content-between align-items-center">
-
             <h4>
                 Add your organization to Habanero
             </h4>
-
             <div class="d-flex px-1 justify-content-around">
-
-
-                    <div>
-                        <form novalidate class="css-form d-flex justify-content-between  align-items-center">
-                                <input class="m-2" type="email" ng-model="email" ng-model-options="{ updateOn: 'blur' }" placeholder="Enter your email..." required /> 
-                            <input class="btn btn-light"" type="button" ng-click="update(user)" value="REGISTER" />  
-                        </form>
-                    </div>
-
-
-
-                <!-- <img src="images/Register.png" style="height: 41px" alt=""> -->
-
+                <div>
+                    <form novalidate class="css-form d-flex justify-content-between  align-items-center">
+                            <input class="m-2" type="email" ng-model="email" ng-model-options="{ updateOn: 'blur' }" placeholder="Enter your email..." required /> 
+                        <input class="btn btn-light"" type="button" ng-click="update(user)" value="REGISTER" />  
+                    </form>
+                </div>
             </div>
-
             <div>&copy; 2020 Joacim Hammarström.</div>
-
             <div class="px-1">
                 <img src="images/Path 1.png" alt="" class="symbol">
                 <img src="images/Path 2.png" alt="" class="symbol">
                 <img src="images/Path 3.png" alt="" class="symbol">
                 <img src="images/Habanero white.png" alt="" class="symbol2">
             </div>
-
         </div>
-
         <p class="text-center">{{ email + " " }}</p>                      
     </div>
-
     </footer>
-
-
-
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

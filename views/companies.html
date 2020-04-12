@@ -1,34 +1,24 @@
 <div class="main-content">
-
     <div class="container d-flex justify-content-between">
         <div class="content-style" style="width: 30%">
-
             <div class="ml-5">
                 <h1>{{ title }} </h6>
-                    <p>{{ text }}</p>
-                    <div style="text-align: left">
-                        <img class="image-style" src="images/{{ image }}" alt="">
-                    </div>
-                    <p>{{ text2 }}</p>
+                <p>{{ text }}</p>
+                <div style="text-align: left">
+                    <img class="image-style" src="images/{{ image }}" alt="">
+                </div>
+                <p>{{ text2 }}</p>
             </div>
         </div>
-
-
         <div class="content-style d-flex flex-wrap">
-
-                <div ng-repeat="item in companies" class="d-flex p-3 m-2" style="width: 30%">
-                    <img src="images/{{ item.image }}" alt="" style="width: auto; height: 50px;">
-                    <div>
-                        <h6>{{ item.title }}</h6>
-                        <p>{{ item.text }}</p>
-                    </div>
+            <div ng-repeat="item in companies" class="d-flex p-3 m-2" style="width: 30%">
+                <img src="images/{{ item.image }}" alt="" style="width: auto; height: 50px;">
+                <div>
+                    <h6>{{ item.title }}</h6>
+                    <p>{{ item.text }}</p>
                 </div>
-
-
             </div>
-
-
+        </div>
     </div>
-
-
-    <img class="background-image" src="images/Woman with iPhone Blur.png" alt="">
+</div>
+<img class="background-image" src="images/Woman with iPhone Blur.png" alt="">
